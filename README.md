@@ -104,7 +104,7 @@ Figure: Generalized Lorenz Curve
 
 The Generalized Lorenz curve shows the cumulative proportion of per-capita consumption expenditure on the y-axis against the cumulative proportion of slum dwellers in Delhi and Kolkata on the x-axis. The income inequality is presented in Figure 2. Delhi has greater welfare compared to Kolkata as the distribution is skewed towards higher consumption expenditure households. GL curve helps the part of dominance analysis to conclude, i.e., Kolkata has more monetary poverty compared to Delhi.
 
--Codes for Unidimensional Analysis as a Stata (.do) file at: <a href="(https://github.com/GauravvBhattarai/PovertyMeasurement/blob/main/Unidimentional%20Poverty.do)">Click Here</a>
+- Codes for Unidimensional Analysis as a Stata (.do) file at: <a href="https://github.com/GauravvBhattarai/PovertyMeasurement/blob/main/Unidimentional%20Poverty.do">Click Here</a>
 
 ## Unidimensional Findings Summary: 
 - Overall, 20.11% of the studied population falls below the consumption poverty line
