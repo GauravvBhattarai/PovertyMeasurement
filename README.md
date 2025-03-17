@@ -48,12 +48,19 @@ The study employs standard monetary poverty measurement techniques:
 Following the Alkire-Foster methodology (2011), the study:
 - Selects dimensions reflecting critical aspects of well-being: housing and infrastructure, health, education, and financial inclusion
 - Includes eight specific indicators:
+  
 a. Housing quality (toilet facilities, water access, roof leakage)
+
 b. Asset ownership
+
 c. Educational attainment
+
 d. Healthcare access
+
 e. Banking facilities
+
 f. Access to government scheme information
+
 - Assigns differential weights to indicators (3/20 for health, education, water, and leakage; 1/10 for information, banking, assets, and sanitation)
 - Sets a multidimensional deprivation threshold at 33% of weighted indicators
 - Calculates adjusted headcount ratio, standard headcount ratio, and intensity of deprivation
