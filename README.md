@@ -20,7 +20,7 @@ This case study investigates two critical questions:
 
 This analysis utilizes primary survey data collected from slum communities in Delhi and Kolkata during 2022-2023. The dataset contains 409 household observations after excluding Mumbai from the original three-city survey. 
  
-- <a href="https://github.com/GauravvBhattarai/PovertyMeasurement/blob/main/Data.dta">The data is available as a Stata (.dta) file at:</a>
+-The Data is available as a Stata (.dta) file at: <a href="https://github.com/GauravvBhattarai/PovertyMeasurement/blob/main/Data.dta">Dataset</a>
 
 The dataset includes household-level information on:
 - Demographic characteristics (household size, gender of household head, religion, caste)
