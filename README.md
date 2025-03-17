@@ -48,26 +48,40 @@ The study employs standard monetary poverty measurement techniques:
 Following the Alkire-Foster methodology (2011), the study:
 - Selects dimensions reflecting critical aspects of well-being: housing and infrastructure, health, education, and financial inclusion
 - Includes eight specific indicators:
-  
-a. Housing quality (toilet facilities, water access, roof leakage)
-
-b. Asset ownership
-
-c. Educational attainment
-
-d. Healthcare access
-
-e. Banking facilities
-
-f. Access to government scheme information
-
+  - Housing quality (toilet facilities, water access, roof leakage)
+  - Asset ownership
+  - Educational attainment
+  - Healthcare access
+  - Banking facilities
+  - Access to government scheme information
 - Assigns differential weights to indicators (3/20 for health, education, water, and leakage; 1/10 for information, banking, assets, and sanitation)
 - Sets a multidimensional deprivation threshold at 33% of weighted indicators
 - Calculates adjusted headcount ratio, standard headcount ratio, and intensity of deprivation
 - Conducts sensitivity analysis across different cut-off points (10% to 100%)
 - Performs decomposition analysis by indicator and subgroup
 
-# B. Unidimentional Consumption Expenditure Poverty
+# E. Variables and their significance
+
+The analysis incorporates both monetary and non-monetary variables:
+
+- Consumption Expenditure: Measures household purchasing power and material well-being
+- Housing Infrastructure:
+ - Toilet Facilities: Indicates sanitation quality and public health conditions
+ - Water Access: Reflects access to safe drinking water, a fundamental need
+ - Roof Leakage: Shows housing quality and protection from environmental hazards
+- Asset Ownership: Represents household wealth and economic stability
+- Education: Captures human capital development and future income potential
+- Healthcare Access: Indicates health security and quality of life
+- Banking Facilities: Measures financial inclusion and economic participation
+- Government Scheme Information: Reflects civic engagement and social protection awareness
+- Demographic Variables:
+ - City: Geographic location (Delhi/Kolkata)
+ - Caste: Social identity (Scheduled Caste, Backward Class, General)
+ - Religion: Cultural affiliation (Hindu, Muslim)
+ - Gender of Household Head: Family structure and gender dynamics
+ - Household Size: Family composition and resource distribution
+
+# F. Unidimentional Consumption Expenditure Poverty
 
 This unidimensional measure of poverty identifies the poor population given the poverty line. This report uses per capita expenditure against the consumption poverty line.  
 
@@ -90,7 +104,20 @@ Figure: Generalized Lorenz Curve
 
 The Generalized Lorenz curve shows the cumulative proportion of per-capita consumption expenditure on the y-axis against the cumulative proportion of slum dwellers in Delhi and Kolkata on the x-axis. The income inequality is presented in Figure 2. Delhi has greater welfare compared to Kolkata as the distribution is skewed towards higher consumption expenditure households. GL curve helps the part of dominance analysis to conclude, i.e., Kolkata has more monetary poverty compared to Delhi.
 
-# C. MULTIDIMENSIONAL POVERTY- ADJUSTED HEADCOUNT RATIO
+-Codes for Unidimensional Analysis as a Stata (.do) file at: <a href="(https://github.com/GauravvBhattarai/PovertyMeasurement/blob/main/Unidimentional%20Poverty.do)">Click Here</a>
+
+## Unidimensional Findings Summary: 
+- Overall, 20.11% of the studied population falls below the consumption poverty line
+- Kolkata shows significantly higher monetary poverty (25.85%) compared to Delhi (14.04%)
+- The poverty gap of 3.46% indicates the average shortfall below the poverty line
+- The squared gap of 0.86% reflects the sensitivity to severe deprivation
+- Subgroup analysis reveals:
+ - Higher poverty rates among Backward Castes (23%) versus General category (18.96%)
+ - Greater vulnerability among Muslims (23.48%) compared to Hindus (18.87%)
+ - Female-headed households face dramatically higher poverty rates (30.42%)
+ - Poverty incidence increases with household size, reaching 63.41% for households with 13 members
+
+# G. MULTIDIMENSIONAL POVERTY- ADJUSTED HEADCOUNT RATIO
 
 Analyzing poverty in multiple dimensions considers several deprivations at the same time, which reflects individual non-monetary aspects of life. Dimensions for this report include housing and infrastructure, health, education, and financial inclusion. These variables are suitable, have reliable scales, and influence the social well-being and living conditions of people. Variables like toilet and water concern physical health and well-being, while the leak variable shows an individual's sensitivity towards environmental hazards. Asset variable shows financial and economic stability. Education is important in development, empowerment, and increased likelihood of a better future while access to healthcare services implies well-being, improved life expectancy, and quality of life. Banking facilities denote financial security, benefits, and awareness while access to government scheme information allows households to utilize services and make informed decisions. Weights can be decided arbitrarily, with more weight on important indicators (Decancq & Lugo, 2013). Heath, education, water, and leak variables are given a weight of 3/20 while information, bank, asset, and toilet are given a weight of 1/10. Weights are assigned considering the vulnerability households might encounter. Assigning 1/10 weights is justified due to the variable’s role in attaining basic & futuristic needs, while 3/10 weights associate secondary human development aspects of life or the survival game. This report relates to Seth & Bag's (2016) reference to the UN-HABITAT definition of slums in the selection of the preliminaries. 
 A weighted deprivation matrix and a counting vector are created to check the total weighted deprivations. The average weighted deprivations among the 409 households in Delhi and Kolkata is 45.8%. According to the OPHI, a person can be categorized to be in poverty if deprived in 20-33% of weighted indicators or in severe poverty if deprived in 50-100% of indicators (Oxford Poverty and Human Development Initiative [OPHI], 2023). According to Alkire & Foster (2011), the choice of k can be a normative decision, thus, this report will employ the same deprivation cut-off of 33% going further. Households deprived in 33% of weighted indicators or more are identified as poor. Only 89 households are not identified as poor among the 409. The adjusted headcount ratio is then calculated as an average of censored weighted deprivations scores. 
@@ -114,13 +141,57 @@ Table: Various k cut-off points
 
 Lastly, dominance analysis is conducted considering various cut-off points starting from 10 to 100 with gaps of 10. The outcomes show the proportion of slum dwellers identified as poor for each k cut-off. As the cut-off increases, the number of households decreases. Dominance analysis of the adjusted headcount ratio as summarized in Table 3 shows the average level of deprivations among the identified poor people at various cut-offs. At a cut-off of 10, 98.2% are identified as poor, 44.1% at 50, and only 0.25% at 100. Standard error tests are executed in a 95% confidence interval to ensure the survey reflects true variability within the population and ensures account of complex survey designs and methods. Survey-specific standard error due to random sampling is 2.71% which is significantly low.
 
-# D. Conclusion and Policy Recommendations
+## Multidimensional Findings Summary: 
+
+- The adjusted headcount ratio is 41.14%, indicating significant multidimensional deprivation
+- 78.36% of households are multidimensionally poor when using the 33% deprivation threshold
+- Among the identified poor, the average intensity of deprivation is 52.5%
+- Roof leakage emerges as the most significant contributor to multidimensional poverty (22.1% relative contribution)
+- City-specific analysis shows:
+ - Multidimensional headcount ratio: Delhi (77.77%) vs. Kolkata (78.91%)
+ - Intensity of poverty: Delhi (51.53%) vs. Kolkata (53.41%)
+ - Water deprivation: Kolkata (78.93%) vs. Delhi (55.19%)
+ - Education deprivation: Delhi (44.82%) vs. Kolkata (39.84%)
+- Particularly vulnerable subgroups include:
+ - Scheduled Castes (45% multidimensionally poor in Kolkata)
+ - Hindu households (43% multidimensionally poor in Kolkata)
+ - Female-headed households (nearly 50% multidimensionally poor in Kolkata)
+
+## Dominance Anlysis Findings Summary: 
+
+- First-order stochastic dominance does not hold between Delhi and Kolkata due to intersecting curves
+- Generalized Lorenz curve analysis confirms Delhi's welfare dominance over Kolkata
+- Sensitivity analysis with varying deprivation cut-offs (10% to 100%) shows robust results
+- With a 10% cut-off, 98.2% of households are identified as poor
+- With a 50% cut-off, 44.1% are poor
+- With a 100% cut-off, only 0.25% are poor
+- Survey-specific standard error is low at 2.71%, indicating reliable estimates
+
+# H. Conclusion and Policy Recommendations
 
 It can be concluded that Delhi ranks comparatively better than Kolkata in monetary standard of living and multidimensional poverty. In most of the selected indicators, slum dwellers in Kolkata face more deprivations. The dominance analysis shows that Delhi enjoys better welfare compared to Kolkata. Both cities exhibit similar trends in adjusted headcount ratios, with some subgroups like scheduled caste, female-headed, and higher-member households experiencing higher deprivations in sensitive indicators like water & sanitation in Kolkata. 
 To recommend the state governments for the improvement of urban slums’ economic mobility and development, the deprivation cut-off of 33% gives a holistic and focused view of policy interference and extends resources to the root cause of poverty. The inclusion of data-driven private sector interventions through Public-private partnership (PPP) in non-monetary standards of living like Education in Delhi (upgrade/expansion of schools, scholarships, early childhood education) and water & sanitation infrastructures (distribution of water filters, leak repair programs, smart water management technology) in Kolata can help vulnerable groups. Partnerships with local NGOs, businesses, and leaders will ensure involvement and sustainability, which assist such initiatives for capacity building and skills development, inclusivity, and empowerment programs that can create awareness among slum dwellers. 
 Targeted food and utility subsidy-based schemes/plans for slum dwellers in Kolkata, especially female-headed households with more than 3 members and scheduled caste, social safe nets (increased security benefits, child support, welfare schemes) or Conditional cash transfers (CCTs) should be introduced. Integrated policy approach prioritizing income-generating activities, vocational training, entrepreneurship support, mobile clinics, microfinance (empower female-led households and marginalized communities), mobile banking solutions through the use of digital platforms and technology (for training, job matching, and access to financial services) will reduce disparity and uplift living standards of slum dwellers in both cities. Initiatives in India like the National Food Security Act, National Rural Livelihood Mission-Aajeevika, etc., can improve tracking mechanisms for alleviation efforts to ensure all the policy recommendations suggested succeed. 
 
-# E. References
+# I. Implimentation Strategy
+
+1. Assessment and Mapping:
+- Conduct detailed slum mapping to identify priority intervention areas
+- Develop household vulnerability scorecards based on multidimensional indicators
+
+2. Program Design:
+- Create city-specific intervention packages addressing priority deprivations
+- Establish clear targeting criteria focusing on identified vulnerable subgroups
+
+3. Monitoring and Evaluation:
+- Implement tracking mechanisms aligned with existing national programs
+- Design impact evaluation frameworks using both monetary and multidimensional metrics
+
+4. Scaling and Integration:
+- Connect local initiatives with national programs like National Food Security Act and National Rural Livelihood Mission
+- Develop knowledge sharing platforms between Delhi and Kolkata for best practices
+
+# J. References
 
 Alkire, S., & Foster, J. (2011). Counting and multidimensional poverty measurement. Journal of Public Economics, 95(7–8), 476–487. https://doi.org/10.1016/j.jpubeco.2010.11.006
 Bhalla, S. S., & Bhasin, K. (2024). India eliminates extreme poverty. Brookings.
