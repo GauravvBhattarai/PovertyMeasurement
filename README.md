@@ -1,11 +1,64 @@
 # Untangling Urban Poverty in India
 
-This project uses Unidimensional Consumption Expenditure Poverty measurement technique and Multidimensional Adjusted Headcount Ratio measurement technique between the two major cities in India, Delhi and Kolkata. 
+This project uses Unidimensional Consumption Expenditure Poverty measurement technique and Multidimensional Adjusted Headcount Ratio measurement technique between the two major cities in India, Delhi and Kolkata. The research reveals significant differences between the two cities, with Delhi generally showing better outcomes than Kolkata across multiple indicators. The study identifies particularly vulnerable subgroups including female-headed households, scheduled castes, and larger families. Based on these findings, targeted policy recommendations are proposed to address specific deprivations in each city. 
 
 # A. Introduction 
 
 Urban poverty is a pressing issue globally and has been a sensitive topic for international and national debates. Reports from the United Nations Development Program (UNDP) and the World Bank have constantly been at center stage for poverty dynamics and alleviation initiatives. The first Sustainable Development Goal (SDG) by the United Nations is the eradication of poverty in all forms around the world. In the case of India, the Ministry of Housing and Urban Affairs, Center for Policy Research, NITI Ayog, etc., have been frontiers working in poverty and deprivation assessments. The consumption expenditure data for 2022-23 revealed by the Ministry of Statistics and Programme Implementation suggests that the Headcount Poverty Ratio of $3.2 in India, declined from 53.6% to 20.8%, especially for the rural areas, which were boosted by public funding redistribution programs (Bhalla & Bhasin, 2024). 
-Delhi, Mumbai, and Kolkata are fast-paced growing cities in India reflecting economic progress, transformation, and social development. Multidimensional poverty in India fell to 11.28% using the Alkire Foster Index among health, education, and living standard dimensions (NITI Ayog and UNDP, 2024). On the contrary, these three cities are also characterized by a substantial population of slum dwellers with poor living conditions. This project aims to analyze and compare slum dwellers of Delhi and Kolkata, their sub-group characteristics in terms of consumption expenditure poverty, and multidimensional poverty using an adjusted headcount ratio and make policy recommendations based on the outcomes. 
+Delhi, Mumbai, and Kolkata are fast-paced growing cities in India reflecting economic progress, transformation, and social development. Multidimensional poverty in India fell to 11.28% using the Alkire Foster Index among health, education, and living standard dimensions (NITI Ayog and UNDP, 2024). On the contrary, these three cities are also characterized by a substantial population of slum dwellers with poor living conditions. This project aims to analyze and compare slum dwellers of Delhi and Kolkata, their sub-group characteristics in terms of consumption expenditure poverty, and multidimensional poverty using an adjusted headcount ratio and make policy recommendations based on the outcomes. This case study focuses on Delhi and Kolkata, two metropolitan areas with substantial slum populations but different socioeconomic profiles, governance structures, and development trajectories.
+
+# B. Problem Statement
+
+India's major metropolitan centers represent paradoxical landscapes of economic progress and persistent urban poverty. While cities like Delhi, Mumbai, and Kolkata are engines of growth and development, they simultaneously house large slum populations living in precarious conditions. Despite national poverty reduction achievements, with multidimensional poverty falling to 11.28% according to NITI Aayog and UNDP (2024), slum communities continue to face severe deprivations.
+
+This case study investigates two critical questions:
+
+1. How do consumption expenditure poverty patterns differ between slum communities in Delhi and Kolkata, and across demographic subgroups?
+2. What multidimensional deprivations characterize these urban poor populations, and how can targeted policies address specific vulnerabilities?
+
+# C. Data Source
+
+This analysis utilizes primary survey data collected from slum communities in Delhi and Kolkata during 2022-2023. The dataset contains 409 household observations after excluding Mumbai from the original three-city survey. 
+ 
+- <a href="https://github.com/GauravvBhattarai/PovertyMeasurement/blob/main/Data.dta">The data is available as a Stata (.dta) file at:</a>
+
+The dataset includes household-level information on:
+- Demographic characteristics (household size, gender of household head, religion, caste)
+- Consumption expenditure
+- Housing conditions (toilet facilities, water access, roof leakage)
+- Asset ownership
+- Educational attainment
+- Healthcare access
+- Financial inclusion indicators
+- Access to government schemes and information
+
+# D. Methodology
+
+1. Unidimensional Consumption Expenditure Analysis
+
+The study employs standard monetary poverty measurement techniques:
+- Per capita expenditure is compared against a consumption poverty line of 1000 rupees
+- Households below this threshold are identified as poor
+- Poverty headcount ratio, gap measures, and squared gap calculations quantify incidence and depth
+- Subgroup analysis examines variations by city, caste, religion, gender of household head, and household size
+- Poverty incidence curves and Generalized Lorenz curves evaluate distributional dominance
+
+2. Multidimensional Poverty Analysis
+
+Following the Alkire-Foster methodology (2011), the study:
+- Selects dimensions reflecting critical aspects of well-being: housing and infrastructure, health, education, and financial inclusion
+- Includes eight specific indicators:
+a. Housing quality (toilet facilities, water access, roof leakage)
+b. Asset ownership
+c. Educational attainment
+d. Healthcare access
+e. Banking facilities
+f. Access to government scheme information
+- Assigns differential weights to indicators (3/20 for health, education, water, and leakage; 1/10 for information, banking, assets, and sanitation)
+- Sets a multidimensional deprivation threshold at 33% of weighted indicators
+- Calculates adjusted headcount ratio, standard headcount ratio, and intensity of deprivation
+- Conducts sensitivity analysis across different cut-off points (10% to 100%)
+- Performs decomposition analysis by indicator and subgroup
 
 # B. Unidimentional Consumption Expenditure Poverty
 
