@@ -67,20 +67,20 @@ The analysis incorporates both monetary and non-monetary variables:
 
 - Consumption Expenditure: Measures household purchasing power and material well-being
 - Housing Infrastructure:
- - Toilet Facilities: Indicates sanitation quality and public health conditions
- - Water Access: Reflects access to safe drinking water, a fundamental need
- - Roof Leakage: Shows housing quality and protection from environmental hazards
+    - Toilet Facilities: Indicates sanitation quality and public health conditions
+    - Water Access: Reflects access to safe drinking water, a fundamental need
+    - Roof Leakage: Shows housing quality and protection from environmental hazards
 - Asset Ownership: Represents household wealth and economic stability
 - Education: Captures human capital development and future income potential
 - Healthcare Access: Indicates health security and quality of life
 - Banking Facilities: Measures financial inclusion and economic participation
 - Government Scheme Information: Reflects civic engagement and social protection awareness
 - Demographic Variables:
- - City: Geographic location (Delhi/Kolkata)
- - Caste: Social identity (Scheduled Caste, Backward Class, General)
- - Religion: Cultural affiliation (Hindu, Muslim)
- - Gender of Household Head: Family structure and gender dynamics
- - Household Size: Family composition and resource distribution
+    - City: Geographic location (Delhi/Kolkata)
+    - Caste: Social identity (Scheduled Caste, Backward Class, General)
+    - Religion: Cultural affiliation (Hindu, Muslim)
+    - Gender of Household Head: Family structure and gender dynamics
+    - Household Size: Family composition and resource distribution
 
 # F. Unidimentional Consumption Expenditure Poverty
 
