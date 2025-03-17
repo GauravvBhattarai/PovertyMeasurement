@@ -1,0 +1,71 @@
+* Import data
+use "https://github.com/GauravvBhattarai/PovertyMeasurement/blob/main/Data.dta"
+
+* Drop Mumbai observations
+drop if city == "Mumbai"
+
+* Generate household weights
+gen hh_weight = sampling_weight * hh_size
+
+* Consumption poverty analysis
+gen identity_poor = (per_capita_expenditure < 1000)
+summarize identity_poor [iw=hh_weight]
+
+* Calculate poverty measures
+svyset [pweight=hh_weight]
+svy: mean identity_poor
+svy: mean identity_poor, over(city)
+svy: mean identity_poor, over(caste)
+svy: mean identity_poor, over(religion)
+svy: mean identity_poor, over(female_headed)
+svy: mean identity_poor, over(hh_size)
+
+* Calculate poverty gap
+gen gap = (identity_poor==1) * (1 - per_capita_expenditure/1000)
+svy: mean gap
+
+* Calculate squared gap
+gen squared_gap = (identity_poor==1) * (1 - per_capita_expenditure/1000)^2
+svy: mean squared_gap
+
+* Multidimensional poverty analysis
+* Generate deprivation matrix
+foreach var in toilet water leak asset education health bank information {
+    gen d_`var' = (`var' == 0)
+}
+
+* Assign weights
+gen w_toilet = 0.1
+gen w_water = 0.15
+gen w_leak = 0.15
+gen w_asset = 0.1
+gen w_education = 0.15
+gen w_health = 0.15
+gen w_bank = 0.1
+gen w_information = 0.1
+
+* Calculate weighted deprivation score
+gen depr_score = d_toilet*w_toilet + d_water*w_water + d_leak*w_leak + d_asset*w_asset + ///
+                 d_education*w_education + d_health*w_health + d_bank*w_bank + d_information*w_information
+
+* Identify multidimensionally poor (k=0.33)
+gen md_poor = (depr_score >= 0.33)
+
+* Calculate adjusted headcount ratio
+gen censored_score = md_poor * depr_score
+svy: mean censored_score
+
+* Calculate intensity of poverty
+svy: mean depr_score if md_poor==1
+
+* Subgroup decomposition
+svy: mean censored_score, over(city)
+svy: mean md_poor, over(city)
+svy: mean depr_score if md_poor==1, over(city)
+
+* Dominance analysis with different k cutoffs
+forvalues k = 10(10)100 {
+    local kval = `k'/100
+    gen md_poor_`k' = (depr_score >= `kval')
+    svy: mean md_poor_`k'
+}
