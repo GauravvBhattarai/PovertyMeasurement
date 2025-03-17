@@ -199,9 +199,9 @@ Stata Code for Replication using both methods: <a href="https://github.com/Gaura
 
 # J. References
 
-Alkire, S., & Foster, J. (2011). Counting and multidimensional poverty measurement. Journal of Public Economics, 95(7–8), 476–487. https://doi.org/10.1016/j.jpubeco.2010.11.006
-Bhalla, S. S., & Bhasin, K. (2024). India eliminates extreme poverty. Brookings.
-Decancq, K., & Lugo, M. A. (2013). Weights in Multidimensional Indices of Wellbeing: An Overview. Econometric Reviews, 32(1), 7–34. https://doi.org/10.1080/07474938.2012.690641
-NITI Aayog and UNDP. (2024). Multidimensional Poverty in India since 2005-06. Discussion Paper.
-Oxford Poverty and Human Development Initiative (OPHI). (2023). Global MPI Country Briefing 2023: India (South Asia). Queen Elizabeth House, University of Oxford. Retrieved from https://ophi.org.uk
-Seth, S., & Bag, S. (2016). UNDERSTANDING STANDARD OF LIVING AND CORRELATES IN SLUMS: AN ANALYSIS USING MONETARY VERSUS MULTIDIMENSIONAL APPROACHES IN THREE INDIAN CITIES SUGATA BAG Understanding Standard of Living and Correlates in Slums: An Analysis using Monetary Versus Multidimensional Approaches in Three Indian Cities.
+- Alkire, S., & Foster, J. (2011). Counting and multidimensional poverty measurement. Journal of Public Economics, 95(7–8), 476–487. https://doi.org/10.1016/j.jpubeco.2010.11.006
+- Bhalla, S. S., & Bhasin, K. (2024). India eliminates extreme poverty. Brookings.
+- Decancq, K., & Lugo, M. A. (2013). Weights in Multidimensional Indices of Wellbeing: An Overview. Econometric Reviews, 32(1), 7–34. https://doi.org/10.1080/07474938.2012.690641
+- NITI Aayog and UNDP. (2024). Multidimensional Poverty in India since 2005-06. Discussion Paper.
+- Oxford Poverty and Human Development Initiative (OPHI). (2023). Global MPI Country Briefing 2023: India (South Asia). Queen Elizabeth House, University of Oxford. Retrieved from https://ophi.org.uk
+- Seth, S., & Bag, S. (2016). UNDERSTANDING STANDARD OF LIVING AND CORRELATES IN SLUMS: AN ANALYSIS USING MONETARY VERSUS MULTIDIMENSIONAL APPROACHES IN THREE INDIAN CITIES SUGATA BAG Understanding Standard of Living and Correlates in Slums: An Analysis using Monetary Versus Multidimensional Approaches in Three Indian Cities.
